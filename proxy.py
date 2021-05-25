@@ -1,11 +1,10 @@
 import ipaddress
 import logging
-import pprint
 import select
 import socket
-import threading
-import ssl
 import socketserver
+import ssl
+import threading
 
 logger = logging.getLogger(__name__)
 
