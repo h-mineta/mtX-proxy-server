@@ -94,12 +94,12 @@ def terminal_prompt(proxy_server: threading):
 
 def main(args: dict):
     try :
-        listen_address = ipaddress.ip_address(args.listen_address)
+        listen_address: ipaddress = ipaddress.ip_address(args.listen_address)
     except ipaddress.AddressValueError as ex:
         raise ex
 
     try :
-        server_address = ipaddress.ip_address(args.server_address)
+        server_address: ipaddress = ipaddress.ip_address(args.server_address)
     except ipaddress.AddressValueError as ex:
         raise ex
 
